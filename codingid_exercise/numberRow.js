@@ -1,7 +1,4 @@
 function numberRow(input, input2) {
-  // if input < 1 || input non number || input2 !== 'Asc' || input2 !== 'Desc' return 'Wrong Input'
-  // if input2 === 'Asc' return Ascending
-  // if input2 === 'Desc' return Descending
 
   if (input < 1 || isNaN(input) || (input2 !== 'Asc' && input2 !== 'Desc')) {
     return 'Wrong Input';
@@ -24,5 +21,4 @@ function numberRow(input, input2) {
 }
 
 console.log(numberRow(100, 'Desc'));
-// the output alwatys return 'Wrong Input'
-// the output always return 'Wrong Input'
+
