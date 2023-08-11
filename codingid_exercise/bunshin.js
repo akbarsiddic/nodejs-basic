@@ -7,7 +7,7 @@ function sumDivider(num) {
   }
   return result;
 }
-console.log(sumDivider(24));
+
 
 function bunshin(input) {
   let num = 220;
