@@ -11,6 +11,32 @@ function isPrime(angka) {
   return true;
 }
 
+// make function mirrorPrime
+function mirrorPrime(angka) {
+  if (isPrime(angka)) {
+    let reverse = 0;
+    let temp = angka;
+    while (temp > 0) {
+      reverse = reverse * 10 + temp % 10;
+      temp = Math.floor(temp / 10);
+    }
+    if (isPrime(reverse)) {
+      console.log("Mirror Prime");
+    } else {
+      console.log("Regular Number");
+    }
+  } else {
+    console.log("Regular Number");
+  }
+}
+
+// // Taking input
+const input = 11;
+
+// // Printing the output
+const output = mirrorPrime(input);
+
+
 function isMagicPrime(angka) {
   let angkaString = angka.toString();
 
@@ -37,7 +63,7 @@ function generateMagicPrimes(start, end) {
 }
 
 // Example usage to generate magic primes between 100 and 500
-const magicPrimes = generateMagicPrimes(100, 1000);
-magicPrimes.slice(0, 10).forEach((angka, index) => {
-  console.log(`#${index + 1} Number => ${angka}`);
-});
+// const magicPrimes = generateMagicPrimes(100, 1000);
+// magicPrimes.slice(0, 10).forEach((angka, index) => {
+//   console.log(`#${index + 1} Number => ${angka}`);
+// });
